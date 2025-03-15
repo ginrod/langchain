@@ -8,7 +8,7 @@ from typing_extensions import TypedDict
 
 import os
 
-ANTHROPIC_API_KEY = "ANTHROPIC_API_KEY"
+ANTHROPIC_API_KEY = "<ANTHROPIC_API_KEY>"
 
 os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
 
