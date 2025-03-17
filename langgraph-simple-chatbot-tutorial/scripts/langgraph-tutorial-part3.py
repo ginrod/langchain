@@ -54,8 +54,7 @@ config = {"configurable":{"thread_id": "1"}}
 def stream_graph_updates(user_input: str):
     for event in graph.stream(
         {"messages": [{"role": "user", "content": user_input}]},
-        config=config,
-        stream_mode="values"):
+        config=config):
         for value in event.values():
             print("Assistant:", value["messages"][-1].content)
 
